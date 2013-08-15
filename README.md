@@ -39,12 +39,14 @@ More content
 
 
 Suggested material for learning python:
-  - [Think Python: How to think like a computer scientist](http://www.greenteapress.com/thinkpython/) free online textbook.
-  - [Google Developers Python Class](https://developers.google.com/edu/python/?hl=ru&csw=1) short course with videos, might be helpful for those looking for video tutorials of Python.
+
+- [Think Python: How to think like a computer scientist](http://www.greenteapress.com/thinkpython/) free online textbook.
+- [Google Developers Python Class](https://developers.google.com/edu/python/?hl=ru&csw=1) short course with videos, might be helpful for those looking for video tutorials of Python.
 
 Companion Textbooks on Machine Learning:
-  - Programming Collective Intelligence
-  - [Machine Learning: An Algorithmic Perspective](http://seat.massey.ac.nz/personal/s.r.marsland/MLbook.html)
+
+- Programming Collective Intelligence
+- [Machine Learning: An Algorithmic Perspective](http://seat.massey.ac.nz/personal/s.r.marsland/MLbook.html)
 
 Installing Python
 -----------------
