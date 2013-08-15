@@ -1,18 +1,24 @@
-tutorial_ml_gkbionics
+ml-python-class
 =====================
 
-A Tutorial on Simple Machine Learning Methods Held for the Graduate School on Bionics, 2012.
-
-Created by Hannes Schulz, Andreas Mueller and Nenard Birešev.
+Material developed for [Texas A&M University -
+Commerce](http://tamuc.edu) course CSci 538: Introduction to Machine
+Learning and Data Analysis.  These materials were originally developed
+in the Fall of 2013 semester.  The original iPython notebooks were
+originally created in 2012 by Hannes Schulz, Andreas Mueller and
+Nenard Birešev at the University of Bonn.  I have taken the original
+material and expanded it for our course.
 
 Content
 -------
+
 - The slides are at [``presentation/presentation_screen.pdf``](https://github.com/amueller/tutorial_ml_gkbionics/raw/master/presentation/presentation_screen.pdf)
 
 - The interactive notebooks are in the main folder.
 
 Viewing the notebooks online
 ----------------------------
+
 The content of the notebooks can be viewed online through nbviewer.ipython.org.
 This is **not interactive**. You need to install Python on your computer to use the notebooks interactively.
 
@@ -26,13 +32,24 @@ This is **not interactive**. You need to install Python on your computer to use 
 
 More content
 ------------
+
 - The latex source code for the slides is contained in ``presentation``.
 - The notebooks used to generating some of the figures on the slides is in ``working_notebooks``.
+- Suggested material for learning python:
+  - [Think Python: How to think like a computer scientist](http://www.greenteapress.com/thinkpython/) free online textbook.
+  - [Google Developers Python Class](https://developers.google.com/edu/python/?hl=ru&csw=1) short course with videos, might be helpful for those looking for video tutorials of Python.
 
+- Companion Textbooks on Machine Learning:
+  - Programming Collective Intelligence
+  - [Machine Learning: An Algorithmic Perspective](http://seat.massey.ac.nz/personal/s.r.marsland/MLbook.html)
 
 Installing Python
 -----------------
-For a true interactive use of the notebooks you need to install Python, IPython (for notebooks) and the required libraries scikit-learn, matplotlib and numpy.
+
+For a true interactive use of the notebooks (which you are required to
+use if you are taking the class) you need to install Python, IPython
+(for notebooks) and the required libraries scikit-learn, matplotlib
+and numpy.
 
 Windows
 -------
