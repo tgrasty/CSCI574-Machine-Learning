@@ -7,7 +7,7 @@ Learning and Data Analysis.  These materials were developed in the
 Fall of 2013 semester.  The original iPython notebooks were created in
 2012 by Hannes Schulz, Andreas Mueller and Nenard Birešev at the
 University of Bonn
-[https://github.com/amueller/tutorial_ml_gkbionics](original github repo).  
+[original github repo](https://github.com/amueller/tutorial_ml_gkbionics).  
 I have taken the original material and expanded it for our course.
 
 Content
