@@ -40,24 +40,25 @@ More content
 
 Suggested material for learning python:
 
-- [Think Python: How to think like a computer scientist](http://www.greenteapress.com/thinkpython/) free online textbook.
+- [Think Python: How to think like a computer scientist](http://www.greenteapress.com/thinkpython/) free online textbook, very good resource for not only Python but learning to program in general.
 - [Google Developers Python Class](https://developers.google.com/edu/python/?hl=ru&csw=1) short course with videos, might be helpful for those looking for video tutorials of Python.
 
 Companion Textbooks on Machine Learning:
 
-- Segaran. (2007). [Programming Collective Intelligence](http://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325/ref=sr_1_1?ie=UTF8&qid=1376624477&sr=8-1&keywords=segaran+programming+collective+intelligence) 
-  already 6 years old, so a bit out of date, and as far as I know no new
+- Segaran. (2007). [Programming Collective Intelligence](http://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325/ref=sr_1_1?ie=UTF8&qid=1376624477&sr=8-1&keywords=segaran+programming+collective+intelligence).
+  Already 6 years old, so a bit out of date, and as far as I know no new
   editions.  But I will develop some of my optimization and decision
   tree examples from here.   [Code examples](http://blog.kiwitobes.com/?p=44)
 
-- Marsland. (2009). [Machine Learning: An Algorithmic Perspective](http://www.amazon.com/Machine-Learning-Algorithmic-Perspective-Recognition/dp/1420067184/ref=sr_1_1?ie=UTF8&qid=1376624555&sr=8-1&keywords=machine+learning+an+algorithmic+perspective)
-  more examples of python ML.  
-  [Code for the Book](http://seat.massey.ac.nz/personal/s.r.marsland/MLbook.html)
+- Marsland. (2009). [Machine Learning: An Algorithmic Perspective](http://www.amazon.com/Machine-Learning-Algorithmic-Perspective-Recognition/dp/1420067184/ref=sr_1_1?ie=UTF8&qid=1376624555&sr=8-1&keywords=machine+learning+an+algorithmic+perspective).
+  More examples of Python ML.  [Code examples](http://seat.massey.ac.nz/personal/s.r.marsland/MLbook.html)
 
-- Conway & White. (2012). [Machine Learning for Hackers](http://www.amazon.com/Machine-Learning-Hackers-Drew-Conway/dp/1449303714/ref=sr_1_1?ie=UTF8&qid=1376624747&sr=8-1&keywords=machine+learning+for+hackers) 
-  Case studies written in R, but this site has example
-  reimplementations in iPython notebooks (which are much clearer, in my opinion):
+- Conway & White. (2012). [Machine Learning for
+  Hackers](http://www.amazon.com/Machine-Learning-Hackers-Drew-Conway/dp/1449303714/ref=sr_1_1?ie=UTF8&qid=1376624747&sr=8-1&keywords=machine+learning+for+hackers). [github repo of book source and data](https://github.com/johnmyleswhite/ML_for_Hackers)
+  Case studies for this book are written in R.  This site 
   [Will it Python](http://slendrmeans.wordpress.com/will-it-python/)
+  has example reimplementations in iPython notebooks.
+  
 
 
 Installing Python
