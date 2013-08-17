@@ -42,6 +42,7 @@ Suggested material for learning python:
 
 - [Think Python: How to think like a computer scientist](http://www.greenteapress.com/thinkpython/) free online textbook, very good resource for not only Python but learning to program in general.
 - [Google Developers Python Class](https://developers.google.com/edu/python/?hl=ru&csw=1) short course with videos, might be helpful for those looking for video tutorials of Python.
+- [Software Carpentry](http://software-carpentry.org/v4/python/index.html) section on learning Python is also very good, and also includes videos.
 
 Companion Textbooks on Machine Learning:
 
