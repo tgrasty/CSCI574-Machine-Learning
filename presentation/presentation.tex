@@ -1,6 +1,6 @@
-% rubber: module xelatex
-\documentclass[english,final,compress]{beamer}
-%\usepackage[utf8]{inputenc}
+% Created 2013-08-18 Sun 17:53
+\documentclass[bigger]{beamer}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fixltx2e}
 \usepackage{graphicx}
@@ -15,154 +15,280 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \tolerance=1000
-\mode<beamer>{\usetheme{Bonn}}
-\usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text}
-\usepackage{xunicode}
-\usepackage{xltxtra}
-\setmainfont[Scale=0.86,Mapping=tex-text]{News Gothic MT}
-\setsansfont[Scale=0.86,Mapping=tex-text]{News Gothic MT}
-\setmonofont[Scale=0.86,Mapping=tex-text]{Andale Mono}
-\usepackage{polyglossia}
-\setdefaultlanguage{english}
-\usepackage[EU1]{fontenc}
-\usepackage{listings}
-\usepackage{color}
-\usepackage{csquotes}
-\usepackage{mdwtab}
-\usepackage{booktabs}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amstext}
-\usepackage{amsthm}
-\usepackage{listings}
-\renewcommand\maketitle{\frame[plain]{\titlepage}\addtocounter{framenumber}{-1}}
+\mode<beamer>{\usetheme{Madrid}}
+\usepackage{minted}
+\usemintedstyle{emacs}
+\usepackage{textpos}
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.89\textwidth,-1cm)
+\includegraphics[height=0.9cm]{figs/tamuc-logo.eps}
+\end{textblock*}}
+\title[CSci538: Machine Learning]{Machine Learning and Data Analysis with Python}
+\institute[TAMUC]{\includegraphics[height=0.9cm]{figs/tamuc-logo.eps}}
 \providecommand{\alert}[1]{\textbf{#1}}
 
-\setbeamercolor{insult}{fg=black,bg=red!30}
-\setbeamercolor{noinsult}{fg=black,bg=green!30}
-\setbeamerfont*{myserif}{family=\rmfamily,size=\scriptsize}
+\title{Machine Learning and Data Analysis with Python}
+\author{Derek Harter}
+\date{2013-08-18}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs Org-mode version 7.8.11}}
 
-\title{Tutorial Machine Learning in Python}
-\author{Andreas M\"{u}ller, Hannes Schulz, Nenad Bire\v sev and Sven 
-    Behnke\\[5mm]\includegraphics[width=.2\linewidth]{style/Logo_UBo_h24_4c-crop}}
-\date{GK Bionik Tutorial 2012}
 \begin{document}
 
 \maketitle
 
-
-\lstset{%
-    basicstyle=\small\tt,
-    keywordstyle=\color{beamer@bonnblue}\bfseries, % style for keywords
-    numbers=none, % where to put the line-numbers
-    numberstyle=\tiny, % the size of the fonts that are used for the line-numbers
-    showspaces=false, % show spaces adding particular underscores
-    showstringspaces=false, % underline spaces within strings
-    showtabs=false, % show tabs within strings adding particular underscores
-    tabsize=2, % sets default tabsize to 2 spaces
-    captionpos=b, % sets the caption-position to bottom
-    breaklines=true, % sets automatic line breaking
-    breakatwhitespace=false, 
-}
-\newcommand\fenc{f_{\mathrm{enc}}}
-\newcommand\fdec{f_{\mathrm{dec}}}
-\newcommand\Wand{\ensuremath{W_{\mathbf{and}}}}
-\newcommand\Wor{\ensuremath{W_{\mathbf{or}}}}
-\newcommand{\w}[1]{\ensuremath{\mathbf{#1}}}
-\newcommand\loss{\ell}
-
-\frame[plain]{\frametitle{Outline}\tableofcontents\addtocounter{framenumber}{-1}}
+\begin{frame}
+\frametitle{Outline}
+\setcounter{tocdepth}{3}
+\tableofcontents
+\end{frame}
 \section{Introduction to Python}
-
-%\begin{frame}
-%    \frametitle{Machine Learning Overview}
-%    \begin{itemize}
-%        \item Intro: Sven
-%        \item Python: Hannes
-%        \item Before Lunch: Unsupervised Learning (Hannes)
-%        \item After Lunch: Supervised Learning (Nenad LinReg, Andy LogReg/kNN)
-%    \end{itemize}
-%\end{frame}
-
-
+\label{sec-1}
 \begin{frame}
-    \frametitle{A Short Introduction to Python}
-    \begin{itemize}
-        \item Please log in, using:
-            \begin{description}
-                \item[Username] \alert{gkbionik}
-                \item[Password] \alert{tut0rial} (with a zero instead of the 
-                    ``o''!)
-            \end{description}
-    \end{itemize}
+\frametitle{Additional Resources}
+\label{sec-1-1}
+
+The following are additional resources, all free and available online, that you should use to learn Python.
+
+\begin{itemize}
+\item \href{http://www.greenteapress.com/thinkpython}{Think Python: How to think like a computer scientist}  \href{http://www.greenteapress.com/thinkpython}{http://www.greenteapress.com/thinkpython}
+     A free but actually professionally done and published textbook.
+\item \href{https://developers.google.com/edu/python}{Google Developers Python Class} \href{https://developers.google.com/edu/python}{https://developers.google.com/edu/python}
+     A short course from Google, but has a good set of videos to cover the basics.
+\item \href{http://software-carpentry.org/v4/python/index.html}{Software Carpentry Python Lectures} \href{http://software-carpentry.org/v4/python/index.html}{http://software-carpentry.org/v4/python/index.html}
+     Well done video lectures part of a larger course on scientific software development.
+\end{itemize}
 \end{frame}
+\begin{frame}[fragile]
+\frametitle{Declaring Variables}
+\label{sec-1-2}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+%% variables
+\label{sec-1-2-1}
+
+\begin{itemize}
+\item Python is a high-level interpreted language.
+\item Python does not force you to declare variable types.
+\item Type is inferred from assigned value.
+\item Python manages memory for you, will garbage collect unreferenced data.
+\end{itemize}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{block}{Variable Declaration}
+\label{sec-1-2-2}
 
 
-\section{Unsupervised Learning}
+\begin{minted}[]{python}
+x = 1
+y = x + 3
+print x, y
+print type(x)
+\end{minted}
 
-\subsection{PCA}
-
-\input{pca.tex}
-
-\subsection{k-Means}
-
-\input{kmeans.tex}
-
-\section{Supervised Learning}
-
-
-\begin{frame}
-    \frametitle{Supervised Learning -- General}
-    \begin{itemize}
-	\item Task: Learn the function $ y = f(x) $ which predicts the output $y$ for the given input $x$, knowing the desired output
-        \item Each example in data is a tuple of the input and desired output (target)
-    \end{itemize}
+\begin{verbatim}
+ 1 4
+ <type 'int'>
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
 \end{frame}
+\begin{frame}[fragile]
+\frametitle{Operations on Variables}
+\label{sec-1-3}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+%% operators
+\label{sec-1-3-1}
+
+\begin{itemize}
+\item Python includes all of the arithmetic and boolean operations with same syntax as C, Java, etc.
+\item Arithmetic operators use standard order of precedence: () ** * / \% + -
+\item Boolean operators: == != < > <= >=
+\end{itemize}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{block}{Operators Example}
+\label{sec-1-3-2}
 
 
-\begin{frame}
-    \frametitle{Example: Supervised Learning}
-    \begin{itemize}
-       \item Input Data: 40 examples of persons (age, height, smoker). 
-	\item Targets: Weight of the person (desired output)
-	\item Goal: Learn a function which predicts the weight for the new person
-		knowing the age, height, nationality of person.
+\begin{minted}[]{python}
+x = (3 + 5) * 2 ** 3
+print x
+print x <= 5
+\end{minted}
 
-    \end{itemize}
+\begin{verbatim}
+ 64
+ False
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
 \end{frame}
+\begin{frame}[fragile]
+\frametitle{Functions}
+\label{sec-1-4}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% functions
+\label{sec-1-4-1}
 
-\begin{frame}
-    \frametitle{Training / Test data}
-    \begin{itemize}
-	\item Learning is done on the training data, for which we know the input and targets
-	\item To test if the model learned to predict the output, we use test data. 		
-    \end{itemize}
+\begin{itemize}
+\item A function is a named sequence of statements that performs a computation.
+\item Python uses def to define a new function.
+\item All Python functions return results, if you don't specify result using
+     return, then None is returned as function value.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Function Example}
+\label{sec-1-4-2}
+
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+def sum_ceiling(x, y, z, ceiling):
+    """Return the sum of x+y+z if it is less than
+    maximum ceiling.  Otherwise return the ceiling"""
+    s = x + y + z
+    if s < ceiling:
+        return s
+    else:
+        return ceiling
+
+print sum_ceiling(3, 8, 11, 20)
+print sum_ceiling(1, 2, 3, 99)
+\end{minted}
+
+\begin{verbatim}
+ 20
+ 6
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
 \end{frame}
+\begin{frame}[fragile]
+\frametitle{Built In Data Structures: Lists}
+\label{sec-1-5}
 
-\subsection{Linear Regression}
+   
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% lists
+\label{sec-1-5-1}
 
-\input{linreg.tex}
+\begin{itemize}
+\item Lists are sequences of values.
+\item The list values do not have to be of the same type (unlike a C or Java array).
+\item Lists are indexed by an integer value, starting at 0.
+\item Lists can be changed, values added or removed, etc.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{List Example}
+\label{sec-1-5-2}
 
-\subsection{Classification}
-\begin{frame}
-    \frametitle{Classification}
-    \begin{itemize}
-        \item Predict to which class a data point belongs.
-        \item Training data are pairs $\left( (x_0, y_0), \cdots, (x_N, y_N)
-                \right), x_i \in \mathbb{R}^n, y_i \in \{0, \cdots, k\}$
-        \item Classical example: Spam / Ham.
-        \item All classes known beforehand.
-        \item Other examples: Digit recognition, cancer benign/malignant, \ldots
-    \end{itemize}
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+states = ['Alaska', 'Alabama', 'Texas', 'Mississippi']
+print states[0]  # first item in list
+print states[1:3] # items 1 up to but not including 3 of list
+print states[-1] # last item in list
+states[2] = 'California'
+print states
+\end{minted}
+
+\begin{verbatim}
+ Alaska
+ ['Alabama', 'Texas']
+ Mississippi
+ ['Alaska', 'Alabama', 'California', 'Mississippi']
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
 \end{frame}
+\begin{frame}[fragile]
+\frametitle{Built In Data Structures: Dictionaries}
+\label{sec-1-6}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% dictionaries
+\label{sec-1-6-1}
 
-\subsection{Logistic Regression}
+\begin{itemize}
+\item Dictionaries map an arbitrary key to a value (key->value pair).
+\item Dictionaries are mutable, values can be changed, added or removed.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Dictionary Example}
+\label{sec-1-6-2}
 
-\input{logreg.tex}
+\fontsize{6}{7.2}\selectfont
 
-\subsection{$k$ Nearest Neighbors}
+\begin{minted}[]{python}
+phone_number = {'John': '818-922-2381',
+                'Susan': '414-938-1923',
+                'Ray': 9034541238}
+print phone_number['Ray']
+phone_number['Alice'] = 8184531923
+print phone_number
+\end{minted}
 
-\input{knn.tex}
+\begin{verbatim}
+ 9034541238
+ {'John': '818-922-2381', 'Ray': 9034541238, 'Alice': 8184531923, 'Susan': '414-938-1923'}
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Built In Data Structures: Tuples}
+\label{sec-1-7}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% tuples
+\label{sec-1-7-1}
+
+\begin{itemize}
+\item Tuples are immutable lists, they can't be changed.
+\item We mention because you will run across them early, for example to return 
+     multiple values from a function, Python programmers often return a tuple of values.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Tuples Example}
+\label{sec-1-7-2}
+
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+def find_min_max(l):
+    """Return the minumum and maximum values in the list l"""
+    minimum = min(l)
+    maximum = max(l)
+    return (minimum,maximum)
+
+l,h = find_min_max([9, 8, 2, 11, 42, 10])
+print "Minimum was: ", l
+print "Maximum was: ", h
+\end{minted}
+
+\begin{verbatim}
+ Minimum was:  2
+ Maximum was:  42
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
 
 \end{document}
