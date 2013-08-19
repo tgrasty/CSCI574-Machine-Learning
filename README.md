@@ -13,7 +13,7 @@ I have taken the original material and expanded it for our course.
 Content
 -------
 
-- The slides are at [``presentation/presentation_screen.pdf``](https://github.com/amueller/tutorial_ml_gkbionics/raw/master/presentation/presentation_screen.pdf)
+- The slides are at [``presentation/presentation.pdf``](https://bitbucket.org/dharter/ml-python-class/src/0da68ef892acce620a58162ba4abe68426cae5ad/presentation/presentation.pdf?at=master)
 
 - The interactive notebooks are in the main folder.
 
