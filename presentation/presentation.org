@@ -57,6 +57,7 @@ The following are additional resources, all free and available online, that you 
     :BEAMER_col: 0.4
     :BEAMER_env: block
     :END:
+\fontsize{6}{7.2}\selectfont
 #+name: variables
 #+begin_src python :results output :exports both
 x = 1
@@ -85,6 +86,7 @@ print type(x)
     :BEAMER_col: 0.4
     :BEAMER_env: block
     :END:
+\fontsize{6}{7.2}\selectfont
 #+name: operators
 #+begin_src python :results output :exports both
 x = (3 + 5) * 2 ** 3
@@ -263,4 +265,215 @@ print "Maximum was: ", h
 
 
 
+
+
+
+** Control flow
+
+The power of an algorithmic programming language comes from
+
+1. Repetition: the ability to repeat some varying set of 
+calculations many times.
+2. Selection: the ability to do one thing rather than
+another.
+
+
+** Conditional Execution
+
+*** conditions 					      :B_ignoreheading:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :BEAMER_col: 0.4
+    :END:
+   - The basic condition statement is the if elsif else construct.
+   - Python has no switch statement for chained conditions.
+   - Usually we perform one action or another dependent on a boolean expression.
+
+
+*** Conditional Execution Example 			    :BMCOL:B_example:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :BEAMER_env: block
+    :END:
+\fontsize{6}{7.2}\selectfont
+#+name: conditional
+#+begin_src python :results output :exports both
+x = 'blue'
+y = 42
+if x == 'green' and y < 20:
+    print "Small and green"
+elif x == 'green' and y >= 20:
+    print "Big and green"
+elif x == 'blue' and y < 20:
+    print "Small and blue"
+elif x == 'blue' and y >= 20:
+    print "Big and blue"
+else:
+    print "I don't know"
+#+end_src
+
+#+RESULTS: conditional
+: country 0 is U.S.A
+: country 1 is France
+: country 2 is Germany
+: country 3 is India
+: country 4 is China
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** Repetition
+
+*** repetition 					      :B_ignoreheading:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :BEAMER_col: 0.4
+    :END:
+   - Python supports while and for loops
+   - While loops are used to repeat a block until some condition becomes false.
+   - Can use for loops for an indexed loop, as is typical in C/Java/etc.
+
+
+*** Index Loop 						    :BMCOL:B_example:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :BEAMER_env: block
+    :END:
+\fontsize{6}{7.2}\selectfont
+#+name: indexed_repetition
+#+begin_src python :results output :exports both
+countries = ['U.S.A', 'France', 'Germany', 'India', 'China']
+for i in range(len(countries)):
+    print 'index: %d is %s' % (i, countries[i])
+#+end_src
+
+#+RESULTS: indexed_repetition
+: index: 0 is U.S.A
+: index: 1 is France
+: index: 2 is Germany
+: index: 3 is India
+: index: 4 is China
+
+
+** Repetition
+
+*** repetition 					      :B_ignoreheading:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :BEAMER_col: 0.4
+    :END:
+   - But it is much more common in Python to only need to iterate
+     over the contents of the list/data structure.
+
+
+*** Content Loop 					    :BMCOL:B_example:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :BEAMER_env: block
+    :END:
+\fontsize{6}{7.2}\selectfont
+#+name: content_repetition
+#+begin_src python :results output :exports both
+countries = ['U.S.A', 'France', 'Germany', 'India', 'China']
+for c in countries:
+    print 'country %s' % (c)
+#+end_src
+
+#+RESULTS: content_repetition
+: country U.S.A
+: country France
+: country Germany
+: country India
+: country China
+
+
+** Libraries
+
+*** libraries 					      :B_ignoreheading:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :BEAMER_col: 0.4
+    :END:
+- Python has a large collection of standard libraries.
+- Use import statement to import library into its own namespace.
+
+*** Importing Libraries 				    :BMCOL:B_example:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :BEAMER_env: block
+    :END:
+\fontsize{6}{7.2}\selectfont
+#+name: import_libraries
+#+begin_src python :results output :exports both
+import random
+# roll 2 fair dice
+d1 = random.randint(1,6)
+d2 = random.randint(1,6)
+print d1, d2
+if d1 + d2 == 2:
+    print "Rolled Snake Eyes"
+#+end_src
+
+#+RESULTS: import_libraries
+: 1 1
+: Rolled Snake Eyes
+
+
+
+** Libraries
+
+*** libraries 					      :B_ignoreheading:BMCOL:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :BEAMER_col: 0.4
+    :END:
+- We will be using the numpy and matplotlib libraries
+- An alternative form of import can be used to specify a different name space
+- By convention, we often import numpy as np and the matplotlib plotting
+functions as plt
+
+*** Library Conventional Names 				    :BMCOL:B_example:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :BEAMER_env: block
+    :END:
+\fontsize{6}{7.2}\selectfont
+#+name: library_import_as
+#+begin_src python :results output :exports both
+import numpy as np
+import matplotlib.pyplot as plt
+print np.__version__
+print plt.__doc__
+#+end_src
+
+#+RESULTS: library_import_as
+#+begin_example
+1.7.1
+
+Provides a MATLAB-like plotting framework.
+
+:mod:`~matplotlib.pylab` combines pyplot with numpy into a single namespace.
+This is convenient for interactive work, but for programming it
+is recommended that the namespaces be kept separate, e.g.::
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    x = np.arange(0, 5, 0.1);
+    y = np.sin(x)
+    plt.plot(x, y)
+
+
+#+end_example
 

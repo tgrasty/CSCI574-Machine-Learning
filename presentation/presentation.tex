@@ -1,4 +1,4 @@
-% Created 2013-08-18 Sun 17:53
+% Created 2013-08-19 Mon 11:34
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -33,7 +33,7 @@
 \hypersetup{
   pdfkeywords={},
   pdfsubject={},
-  pdfcreator={Emacs Org-mode version 7.8.11}}
+  pdfcreator={Emacs Org-mode version 7.9.2}}
 
 \begin{document}
 
@@ -80,6 +80,7 @@ The following are additional resources, all free and available online, that you 
 \begin{block}{Variable Declaration}
 \label{sec-1-2-2}
 
+\fontsize{6}{7.2}\selectfont
 
 \begin{minted}[]{python}
 x = 1
@@ -114,6 +115,7 @@ print type(x)
 \begin{block}{Operators Example}
 \label{sec-1-3-2}
 
+\fontsize{6}{7.2}\selectfont
 
 \begin{minted}[]{python}
 x = (3 + 5) * 2 ** 3
@@ -285,6 +287,222 @@ print "Maximum was: ", h
 \begin{verbatim}
  Minimum was:  2
  Maximum was:  42
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}
+\frametitle{Control flow}
+\label{sec-1-8}
+
+
+The power of an algorithmic programming language comes from
+
+\begin{enumerate}
+\item Repetition: the ability to repeat some varying set of
+\end{enumerate}
+calculations many times.
+\begin{enumerate}
+\item Selection: the ability to do one thing rather than
+\end{enumerate}
+another.
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Conditional Execution}
+\label{sec-1-9}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% conditions
+\label{sec-1-9-1}
+
+\begin{itemize}
+\item The basic condition statement is the if elsif else construct.
+\item Python has no switch statement for chained conditions.
+\item Usually we perform one action or another dependent on a boolean expression.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Conditional Execution Example}
+\label{sec-1-9-2}
+
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+x = 'blue'
+y = 42
+if x == 'green' and y < 20:
+    print "Small and green"
+elif x == 'green' and y >= 20:
+    print "Big and green"
+elif x == 'blue' and y < 20:
+    print "Small and blue"
+elif x == 'blue' and y >= 20:
+    print "Big and blue"
+else:
+    print "I don't know"
+\end{minted}
+
+\begin{verbatim}
+ Big and blue
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Repetition}
+\label{sec-1-10}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% repetition
+\label{sec-1-10-1}
+
+\begin{itemize}
+\item Python supports while and for loops
+\item While loops are used to repeat a block until some condition becomes false.
+\item Can use for loops for an indexed loop, as is typical in C/Java/etc.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Index Loop}
+\label{sec-1-10-2}
+
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+countries = ['U.S.A', 'France', 'Germany', 'India', 'China']
+for i in range(len(countries)):
+    print 'index: %d is %s' % (i, countries[i])
+\end{minted}
+
+\begin{verbatim}
+ index: 0 is U.S.A
+ index: 1 is France
+ index: 2 is Germany
+ index: 3 is India
+ index: 4 is China
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Repetition}
+\label{sec-1-11}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% repetition
+\label{sec-1-11-1}
+
+\begin{itemize}
+\item But it is much more common in Python to only need to iterate
+     over the contents of the list/data structure.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Content Loop}
+\label{sec-1-11-2}
+
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+countries = ['U.S.A', 'France', 'Germany', 'India', 'China']
+for c in countries:
+    print 'country %s' % (c)
+\end{minted}
+
+\begin{verbatim}
+ country U.S.A
+ country France
+ country Germany
+ country India
+ country China
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Libraries}
+\label{sec-1-12}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% libraries
+\label{sec-1-12-1}
+
+\begin{itemize}
+\item Python has a large collection of standard libraries.
+\item Use import statement to import library into its own namespace.
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Importing Libraries}
+\label{sec-1-12-2}
+
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+import random
+# roll 2 fair dice
+d1 = random.randint(1,6)
+d2 = random.randint(1,6)
+print d1, d2
+if d1 + d2 == 2:
+    print "Rolled Snake Eyes"
+\end{minted}
+
+\begin{verbatim}
+ 3 6
+\end{verbatim}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Libraries}
+\label{sec-1-13}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+%% libraries
+\label{sec-1-13-1}
+
+\begin{itemize}
+\item We will be using the numpy and matplotlib libraries
+\item An alternative form of import can be used to specify a different name space
+\item By convention, we often import numpy as np and the matplotlib plotting
+\end{itemize}
+functions as plt
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{block}{Library Conventional Names}
+\label{sec-1-13-2}
+
+\fontsize{6}{7.2}\selectfont
+
+\begin{minted}[]{python}
+import numpy as np
+import matplotlib.pyplot as plt
+print np.__version__
+print plt.__doc__
+\end{minted}
+
+
+\begin{verbatim}
+1.7.1
+
+Provides a MATLAB-like plotting framework.
+
+:mod:`~matplotlib.pylab` combines pyplot with numpy into a single namespace.
+This is convenient for interactive work, but for programming it
+is recommended that the namespaces be kept separate, e.g.::
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    x = np.arange(0, 5, 0.1);
+    y = np.sin(x)
+    plt.plot(x, y)
 \end{verbatim}
 \end{block}
 \end{column}
