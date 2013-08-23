@@ -91,7 +91,7 @@ You need to make sure to have at least IPython >= 0.11 installed. You can update
 
 Installing Scikit-learn
 -----------------------
-More tips on installing scikit-learn can be found on the [scikit-learn website](http://scikit-learn.sourceforge.net/dev/install.html#installing-an-official-release).
+More tips on installing scikit-learn can be found on the [scikit-learn website](http://scikit-learn.sourceforge.net/dev/install.html#installing-an-official-release).  If you used the Enthought Python distribution, I believe they will be installed for you as part of that distribution.
 
 
 More Resources

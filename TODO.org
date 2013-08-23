@@ -6,6 +6,7 @@
 ** TODO Rearrange existing units as necessary
 * DONE Video on setting up python environment on Windows
   CLOSED: [2013-08-19 Mon 16:39]
+* TODO Video on Intro to Python and the 0-Python notebook.
 * DONE Clean up presentation links on overview
   CLOSED: [2013-08-19 Mon 16:41]
 ** TODO Clean up the nbviewer links
