@@ -23,14 +23,14 @@ Viewing the notebooks online
 The content of the notebooks can be viewed online through nbviewer.ipython.org.
 This is **not interactive**. You need to install Python on your computer to use the notebooks interactively.
 
-- [Lecture 0a - Introcution to Python Programming](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-0a-Introduction-to-Python-Programming.ipynb)
+- [Lecture 0a - Introcution to Python Programming](http://nbviewer.ipython.org/urls/bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-0a-Introduction-to-Python-Programming.ipynb)
 - [Lecture 0b - More Python Programming](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-0b-More-Python-Programming.ipynb)
-- [Lecture 1 - Principle Component Analysis](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-1-PCA.ipynb)
-- [Lecture 2 - KMeans clustering](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-2-Kmeans.ipynb)
-- [Lecture 3a - Linear regression 1D](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-3a-Linear-regression-1d.ipynb)
-- [Lecture 3b - Linear regression 2D](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-3b-Linear-regression-2d.ipynb)
-- [Lecture 4 - Logistic Regression](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-4-Logistic-Regression.ipynb)
-- [Lecture 5 - k Nearest Neighbors](https://bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-5-k-Nearest-Neighbors.ipynb)
+- [Lecture 1 - Principle Component Analysis](http://nbviewer.ipython.org/urls/bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-1-PCA.ipynb)
+- [Lecture 2 - KMeans clustering](http://nbviewer.ipython.org/urls/bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-2-Kmeans.ipynb)
+- [Lecture 3a - Linear regression 1D](http://nbviewer.ipython.org/urls/bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-3a-Linear-regression-1d.ipynb)
+- [Lecture 3b - Linear regression 2D](http://nbviewer.ipython.org/urls/bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-3b-Linear-regression-2d.ipynb)
+- [Lecture 4 - Logistic Regression](http://nbviewer.ipython.org/urls/bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-4-Logistic-Regression.ipynb)
+- [Lecture 5 - k Nearest Neighbors](http://nbviewer.ipython.org/urls/bitbucket.org/dharter/ml-python-class/raw/d97154c7a9ac49a86cc8724ceaea5b07f00e1d7c/Lecture-5-k-Nearest-Neighbors.ipynb)
 
 More content
 ------------
