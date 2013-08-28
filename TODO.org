@@ -10,6 +10,8 @@
 * TODO My example implementation of K-means clustering may be buggy, need to check
 * TODO Should probably add example of using K-means to perform classification
 - Would be nice to for example have example of drawing a number and classifying it
+* TODO Need to add more to linear regression, use ML4H examples
+- Intro to ML4H linear regression has a nice explanation of classification.
 * DONE Clean up presentation links on overview
   CLOSED: [2013-08-19 Mon 16:41]
 ** TODO Clean up the nbviewer links
