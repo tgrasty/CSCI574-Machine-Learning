@@ -2,6 +2,7 @@
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 538  Fall 2013 <2013-08-18 Sun>
+* TODO Might want to add a notebook introduction to Pandas for ths class.
 * TODO Look over Data Analysys w/ Open Source book to add content on
 - PCA
 - Linear Regression
