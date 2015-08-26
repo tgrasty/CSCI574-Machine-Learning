@@ -8,8 +8,13 @@ def plot_decision_boundary(clf, X):
     xx = np.linspace(np.min(X[:, 0]), np.max(X[:, 0]))
     yy = a * xx - clf.intercept_ / w[1]
     plt.plot(xx, yy)
-    plt.xticks(())
-    plt.yticks(())
+
+def plot_decision_boundary_multinomial(clf, X):
+    for ( (w0, w1), intercept) in zip(clf.coef_, clf.intercept_):
+        a = w0 / w1
+        xx = np.linspace(np.min(X[:,0]), np.max(X[:,0]))
+        yy = a * xx - intercept / w1
+        plt.plot(xx, yy)
 
 def plotEllipse(pos,P,edge='k',face='none',line_width='.1'):
     from numpy.linalg import svd
