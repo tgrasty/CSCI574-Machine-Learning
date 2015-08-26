@@ -2,19 +2,19 @@
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
 #+DATE:      CSci 538  Fall 2013 <2013-08-18 Sun>
-* TODO Might want to add a notebook introduction to Pandas for ths class.
-* TODO Look over Data Analysys w/ Open Source book to add content on
+* DONE Might want to add a notebook introduction to Pandas for ths class.
+* DONE Look over Data Analysys w/ Open Source book to add content on
 - PCA
 - Linear Regression
 - clustering
 - Logistic regression
 - Beef up cross validation training description from here
-* TODO Might use Data Analysis w/ Open Source book to add SVM section.
-* TODO Figure out how to correctly specify links to nbviewer from bitbucket
+* DONE Might use Data Analysis w/ Open Source book to add SVM section.
+* DONE Figure out how to correctly specify links to nbviewer from bitbucket
 - I think current links are going to be tied to a particular commit 
   because of the embedded commit id/hash in url
-* TODO My example implementation of K-means clustering may be buggy, need to check
-* TODO Should probably add example of using K-means to perform classification
+* DONE My example implementation of K-means clustering may be buggy, need to check
+* DONE Should probably add example of using K-means to perform classification
 - Would be nice to for example have example of drawing a number and classifying it
 * DONE Decide what sections/notebooks to create for course
   CLOSED: [2013-08-28 Wed 08:01]

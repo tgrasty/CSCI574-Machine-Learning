@@ -10,10 +10,11 @@ University of Bonn
 [original github repo](https://github.com/amueller/tutorial_ml_gkbionics).  
 I have taken the original material and expanded it for our course.
 
+The materials have been updated for the Fall of 2015 semester.  Materials
+from Dr. Ng Coursera [machine learning](https://www.coursera.org/learn/machine-learning/home/welcome) course were used extensively for the updates and assignments.
+
 Content
 -------
-
-- The slides are at [``presentation/presentation.pdf``](https://bitbucket.org/dharter/ml-python-class/src/0da68ef892acce620a58162ba4abe68426cae5ad/presentation/presentation.pdf?at=master)
 
 - The interactive notebooks are in the main folder.
 
@@ -26,9 +27,6 @@ This is **not interactive**. You need to install Python on your computer to use 
 
 More content
 ------------
-
-- The latex source code for the slides is contained in ``presentation``.
-- The notebooks used to generating some of the figures on the slides is in ``working_notebooks``.
 
 
 Suggested material for learning python:
