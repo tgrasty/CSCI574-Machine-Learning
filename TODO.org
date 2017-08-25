@@ -1,35 +1,6 @@
 #+TITLE:     Machine Learning and Data Analysis with Python
 #+AUTHOR:    Derek Harter
 #+EMAIL:     derek@harter.pro
-#+DATE:      CSci 538  Fall 2013 <2013-08-18 Sun>
-* DONE Might want to add a notebook introduction to Pandas for ths class.
-* DONE Look over Data Analysys w/ Open Source book to add content on
-- PCA
-- Linear Regression
-- clustering
-- Logistic regression
-- Beef up cross validation training description from here
-* DONE Might use Data Analysis w/ Open Source book to add SVM section.
-* DONE Figure out how to correctly specify links to nbviewer from bitbucket
-- I think current links are going to be tied to a particular commit 
-  because of the embedded commit id/hash in url
-* DONE My example implementation of K-means clustering may be buggy, need to check
-* DONE Should probably add example of using K-means to perform classification
-- Would be nice to for example have example of drawing a number and classifying it
-* DONE Decide what sections/notebooks to create for course
-  CLOSED: [2013-08-28 Wed 08:01]
-** TODO Rearrange existing units as necessary
-* DONE Need to add more to linear regression, use ML4H examples
-  CLOSED: [2013-08-28 Wed 08:01]
-- Intro to ML4H linear regression has a nice explanation of classification.
-* DONE Clean up presentation links on overview
-  CLOSED: [2013-08-19 Mon 16:41]
-** TODO Clean up the nbviewer links
-* DONE Video on Intro to Python and the 0-Python notebook.
-  CLOSED: [2013-08-26 Mon 18:14]
-* DONE Add implemention of kMeans in python from Collective Intelligence
-  CLOSED: [2013-08-24 Sat 13:38]
-* DONE Beef up the PCA notebook
-  CLOSED: [2013-08-20 Tue 13:14]
-* DONE Video on setting up python environment on Windows
-  CLOSED: [2013-08-19 Mon 16:39]
+#+DATE:      CSci 574 <2017-08-25 Fri>
+* TODO Figure out problems with rendering summation symbols and matrices
+  in jupyter notebooks.
