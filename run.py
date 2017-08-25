@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     # run notebooks, the default if no action specified
     if len(sys.argv) == 1 or sys.argv[1] == 'notebooks':
-        cmd = 'ipython notebook --pylab=inline notebooks'
+        cmd = 'jupyter notebooks'
         os.system(cmd)
     else:
         usage()
