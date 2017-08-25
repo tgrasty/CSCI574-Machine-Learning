@@ -1,4 +1,4 @@
-# ml-python-class
+1# ml-python-class
 
 Material developed for [Texas A&M University -
 Commerce](http://tamuc.edu) course CSci 574: Introduction to Machine
@@ -78,7 +78,7 @@ to get started..
 
 ## Version requirements
 
-You need to make sure to have at least IPython >= 0.11 installed. You can update using the programm ``easy_install``.
+You need to make sure to have at least IPython >= 5.1.0 installed. You can update using the programm ``easy_install``.
 
 ## Installing Scikit-learn
 
