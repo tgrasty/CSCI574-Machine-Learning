@@ -35,5 +35,6 @@
 *.xdy
 *.tdo
 *.eps
+*~
 presentation/.mk
 presentation/presentation.tex.project.vim

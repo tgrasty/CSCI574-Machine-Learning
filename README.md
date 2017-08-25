@@ -1,8 +1,7 @@
-ml-python-class
-=====================
+# ml-python-class
 
 Material developed for [Texas A&M University -
-Commerce](http://tamuc.edu) course CSci 538: Introduction to Machine
+Commerce](http://tamuc.edu) course CSci 574: Introduction to Machine
 Learning and Data Analysis.  These materials were developed in the
 Fall of 2013 semester.  The original iPython notebooks were created in
 2012 by Hannes Schulz, Andreas Mueller and Nenard Birešev at the
@@ -13,21 +12,17 @@ I have taken the original material and expanded it for our course.
 The materials have been updated for the Fall of 2015 semester.  Materials
 from Dr. Ng Coursera [machine learning](https://www.coursera.org/learn/machine-learning/home/welcome) course were used extensively for the updates and assignments.
 
-Content
--------
+## Content
 
-- The interactive notebooks are in the main folder.
-
-Viewing the notebooks online
-----------------------------
-
-The content of the notebooks can be viewed online through nbviewer.ipython.org.
-This is **not interactive**. You need to install Python on your computer to use the notebooks interactively.
+- The main content of the course will be delievers as interactive
+  ipython/Jupyter notebooks.
+- The lecture notebooks can be found in
+  the lectures subdirectory, and all assignments for the course will
+  be uploaded to the assignments subdirectory.
 
 
-More content
-------------
 
+## More content
 
 Suggested material for learning python:
 
@@ -53,40 +48,45 @@ Companion Textbooks on Machine Learning:
   
 
 
-Installing Python
------------------
+## Installing Python
 
 For a true interactive use of the notebooks (which you are required to
-use if you are taking the class) you need to install Python, IPython
+use if you are taking the class) you need to install Python, IPython and Jupyter
 (for notebooks) and the required libraries scikit-learn, matplotlib
 and numpy.
 
-Windows
--------
+### Windows & Mac Users
+
 You can install everything at once using a complete scientific Python distribution.
-Two good ones are the [Enthought Python distribution](http://www.enthought.com/products/epd.php) (EPD, free for academic use) or  [Python-(x, y)](http://code.google.com/p/pythonxy/) (free for everyone).
+Two good ones are the [Enthought Canopy Python distribution](http://www.enthought.com/products/epd.php)
+or the [Anaconda Distribution](http://www.continuum.io/downloads).
 
-Mac
----
-For OS X, you can also use the [Enthought Python distribution](http://www.enthought.com/products/epd.php) or the [scipy-superpack](http://fonnesbeck.github.com/ScipySuperpack/).
+Recently I have begun recommending and preferring the Anaconda distribution
+for Window.  This [video](http://derekharter.com/class/fall2013/csci538/0-windows-python-install.webm)
+has an example of installing a Python distribution
+on a Windows system, as well as install git and using it to get the course
+repository and view the notebooks in Jupyter.
 
 
-Linux
------
-Just use your package manager, for example on ubuntu or debian, use
-``apt-get install python ipython python-matplotlib python-numpy python-sklearn``.
+### Linux
 
-Version requirements
---------------------
+You can use the Anaconda distribution mentioned above, or simply
+use your package manager from your linux distribution to install the
+needed Python and iPython packages by hand. For example on Ubuntu or Debian, use
+``apt-get install python ipython python-matplotlib python-numpy python-sklearn``
+to get started..
+
+## Version requirements
+
 You need to make sure to have at least IPython >= 0.11 installed. You can update using the programm ``easy_install``.
 
-Installing Scikit-learn
------------------------
+## Installing Scikit-learn
+
 More tips on installing scikit-learn can be found on the [scikit-learn website](http://scikit-learn.sourceforge.net/dev/install.html#installing-an-official-release).  If you used the Enthought Python distribution, I believe they will be installed for you as part of that distribution.
 
 
-More Resources
---------------
+## More Resources
+
 - The [scikit-learn example gallery](http://scikit-learn.sourceforge.net/dev/auto_examples/index.html) and [user guide](http://scikit-learn.sourceforge.net/dev/user_guide.html).
 - [Videos and presentations](http://scikit-learn.sourceforge.net/dev/presentations.html) on machine learning and scikit-learn.
 - The [matplotlib example gallery](http://matplotlib.org/gallery.html).
