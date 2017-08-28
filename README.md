@@ -99,7 +99,7 @@ can be found at: https://bitbucket.org/dharter/intro-compsci-class
 To clone the repository from a dos terminal or command line prompt, once
 git is installed, do the following
 
-    $ git clone https://bitbucket.org/dharter/intro-compsci-class.git
+    $ git clone https://bitbucket.org/dharter/ml-python-class.git
 
 
 ### Test Python, Jupyter and Class Notebooks
