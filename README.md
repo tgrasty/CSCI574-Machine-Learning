@@ -48,37 +48,73 @@ Companion Textbooks on Machine Learning:
   
 
 
-## Installing Python
+## Getting Started
 
-For a true interactive use of the notebooks (which you are required to
-use if you are taking the class) you need to install Python, IPython and Jupyter
-(for notebooks) and the required libraries scikit-learn, matplotlib
-and numpy.
+Before the end of the first week of class, you need to get a working
+Python distribution installed on your personal machine, and you need
+to clone a copy of our class repository.  The following video should
+help you in getting started
 
-### Windows & Mac Users
+http://derekharter.com/class/fall2017/getting-started.webm
 
-You can install everything at once using a complete scientific Python distribution.
-Two good ones are the [Enthought Canopy Python distribution](http://www.enthought.com/products/epd.php)
-or the [Anaconda Distribution](http://www.continuum.io/downloads).
+In order to do the class lectures and readings, you need to be able to
+run and execute Jupyter notebooks.  In general, you need to complete
+the following 4 steps.
 
-Recently I have begun recommending and preferring the Anaconda distribution
-for Window.  This [video](http://derekharter.com/class/fall2013/csci538/0-windows-python-install.webm)
-has an example of installing an Enthought Python distribution
-on a Windows system, as well as install git and using it to get the course
-repository and view the notebooks in Jupyter.
+1. Download and install a Python Distribution, such as Anaconda or
+   Enthought python distributions, that includes support for Jupyter
+   notebooks.
+2. Download and install a git client on your machine.
+3. Clone the class repository.
+4. Test out Python, running Jupyter notebooks, and that you can access
+   and execute the course lecture notebooks with your system setup.
+
+### Download and Install a Python Distribution
+
+For this course we recommend using a Python scientific distribution.
+We recommend using the Anaconda distribution, though the Enthought
+Canopy distribution should be fine as well.
+
+- [Anaconda Distribution Download](https://www.anaconda.com/download/)
+- [Enthought Canopy Distribution Download](https://store.enthought.com/downloads/)
+
+Whether you are using Windows, Mac or Linux, the linked to installers
+should work for you.  We are still using Python version 2.7 for this class,
+so please download and install the 2.7 version of the installer.
+
+### Download and Install Git Client
+
+For Linux or Mac users, if git is not already installed you can probably
+most easily use the standard package management systems of your OS to
+install git.  For Windows, or to install it by hand on Linux/Mac, you
+should get the package from the SCM git site:
+
+- [Git download package](https://git-scm.com/downloads)
+
+### Clone Class Repository
+
+The class repository for our Introduction to Computational Science class
+can be found at: https://bitbucket.org/dharter/intro-compsci-class
+
+To clone the repository from a dos terminal or command line prompt, once
+git is installed, do the following
+
+    $ git clone https://bitbucket.org/dharter/intro-compsci-class.git
 
 
-### Linux
+### Test Python, Jupyter and Class Notebooks
 
-You can use the Anaconda distribution mentioned above, or simply
-use your package manager from your linux distribution to install the
-needed Python and iPython packages by hand. For example on Ubuntu or Debian, use
-``apt-get install python ipython python-matplotlib python-numpy python-sklearn``
-to get started..
+There are multiple ways to start up a Jupyter notebook server on your
+system once you have Python and Jupyer installed.  From a dos prompt
+or the command line, first change to the directory where you cloned
+your class repository into, and then execute the command
 
-## Version requirements
+    $ jupyter notebook
 
-You need to make sure to have at least IPython >= 5.1.0 installed. You can update using the programm ``easy_install``.
+This will start up a notebook server, and on most systems will open
+up a file browser inside of your default web browser, in order for
+you to browse and select iPython notebooks for execution.
+
 
 ## Installing Scikit-learn
 
