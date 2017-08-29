@@ -94,7 +94,7 @@ should get the package from the SCM git site:
 ### Clone Class Repository
 
 The class repository for our Introduction to Computational Science class
-can be found at: https://bitbucket.org/dharter/intro-compsci-class
+can be found at: https://bitbucket.org/dharter/ml-python-class
 
 To clone the repository from a dos terminal or command line prompt, once
 git is installed, do the following
