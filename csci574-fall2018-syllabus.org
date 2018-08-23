@@ -1,6 +1,6 @@
 #+TITLE:     CSci 574 Machine Learning
 #+Author:    Course Syllabus
-#+Date:      Fall 2017
+#+Date:      Fall 2018
 #+DESCRIPTION: Tentative Course Syllabus
 #+OPTIONS:   H:4 num:nil toc:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:nil pri:nil tags:not-in-toc
@@ -14,7 +14,7 @@
 | Department of Computer Science           |
 | Texas A&M University - Commerce          |
 | Office: SCI 355                          |
-| Office Hours: T, W, Th, 1 - 3:30 pm      |
+| Office Hours: T, W, Th, 1 - 3 pm         |
 | E-mail: Derek.Harter@tamuc.edu           |
 
 * Class Meetings
@@ -23,35 +23,29 @@
 Lectures and course materials will be distributed through our
 University's eCollege online course system.
 
-| 01W | 83006 | Web Based Class |
+| 01W | 82932 | Web Based Class |
 
 * Course Description
 
-Study of computer algorithms that automatically acquire new knowledge
-and improve their own performance through experience. Theory and
-practical implementation of algorithms for machine learning. Topics
-include linear and logistic regression, artificial neural networks,
-Bayesian networks and learning, decision trees, kernel /
-support-vector machines, statistical learning methods, unsupervised
-learning, reinforcement learning, and other modern, emerging
-algorithms. Short programming assignments and/or projects with
-hands-on experiments with various learning algorithms will be given.
-
-In this course we will start with an introduction to Python, which we
-will be using to implement various machine learning methods.  We will
-implement various methods by hand, and use existing Python machine learning
-libraries, for assignments and lecture materials for this course.
+This semester's AI course will focus on the sub field of machine
+learning with some work in the analysis of big data.  We will look at
+classic unsupervised and supervised learning methods, used in the
+field to classify data, cluster it and find optimizations.  This will
+include looking at k-means and hierarchical clustering,
+self-organizing maps, linear regression, decision trees, optimization
+techniques such as genetic algorithms, etc.  We will cover ways of
+getting hold of interesting datasets, ideas on how to collect data
+from users, and many different ways to analyze and understand the data
+once you've found it.
 
 * Requirements and Objectives
 
-1. Be able to formulate machine learning problems corresponding to different applications. 
-2. Understand a range of machine learning algorithms along with their strengths and weaknesses. 
-3. Understand the basic differences between supervised and unsupervised machine learning
-   methods, and be able to apply each where appropriate.
-4. Understand the basic theory underlying machine learning. 
-5. Be able to aply machine learning algorithms to solve problems of moderate complexity. 
-6. Be able to read current research papers and understand the issues raised by current research.
-
+- Explore downloading and mining real web data sets.
+- Learn about unsupervised methods for grouping and visualization.
+- Program optimization algorithms to search for optimal solutions
+  using hill climbing, GA's, etc.
+- Become familiar with some advanced classification techniques of the
+  kernel methods family of algorithms.
 
 * Companion Textbooks / Readings
 
@@ -67,10 +61,7 @@ libraries, for assignments and lecture materials for this course.
 
 Background in basic programming (Undergraduate equivalent of CSci
 151/152) and Data Structures (Undergraduate equivalent of CSci 270) or
-equivalent knowledge will be assumed for this course.  You must have
-passed or received credit for CSci 515 (Fundamentals of Programming C/C++).
-We will be learning the Python programming language in this course,
-but previous knowledge of Python will not be assumed.
+equivalent knowledge will be assumed for this course.
 
 * Evaluation (Tentative)
 Your grade for the course will be based on the following (approximate) percentages:
@@ -133,9 +124,9 @@ instructor of this class unless prior arrangement has been made with
 the instructor.
 
 * Technology Requirements
-This course is a web enhanced course, which means all assignments and 
+This course is a web enhanced course, which means all assignments and
 handouts will be distributed and collected through our University's
-eCollege online course system.  
+eCollege online course system.
 - To fully participate in online courses you will need to use a current
   browser, such as Mozilla Firefox or Google Chrome.
 - You will need regular access to a computer with a broadband internet
@@ -223,35 +214,35 @@ Commerce campuses. Report violations to the University Police Department at 903-
 | *W* | *Date*             | *Topic / Activity*                                 | *Notebook* | *Test*             |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   1 | 8/28               | Course Introduction, Set up Python                 | 1a & 1b    |                    |
+|   1 | 8/27               | Course Introduction, Set up Python                 | 1a & 1b    |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   2 | 9/4                | Introduction to Python Scientific Libraries        | 2a, 2b, 2c |                    |
+|   2 | 9/3                | Introduction to Python Scientific Libraries        | 2a, 2b, 2c |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   3 | 9/11               | Linear Regression with One Variable                |            |                    |
+|   3 | 9/10               | Linear Regression with One Variable                |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   4 | 9/18               | Linear Regression with Multiple Variables          |            |                    |
+|   4 | 9/17               | Linear Regression with Multiple Variables          |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   5 | 9/25               | Logistic Regression and Regularization             |            |                    |
+|   5 | 9/24               | Logistic Regression and Regularization             |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   6 | 10/2               | K Nearest Neighbor                                 |            |                    |
+|   6 | 10/1               | K Nearest Neighbor                                 |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   7 | 10/9               | Decision Trees and Ensembles                       |            |                    |
+|   7 | 10/8               | Decision Trees and Ensembles                       |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   8 | 10/16              |                                                    |            | Midterm            |
+|   8 | 10/15              |                                                    |            | Midterm            |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|   9 | 10/23              | Support Vector Mechines (SVM) and Kernel Methods   |            |                    |
+|   9 | 10/22              | Support Vector Mechines (SVM) and Kernel Methods   |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|  10 | 10/30              | Unsupervised Learning and Dimensionality Reduction |            |                    |
+|  10 | 10/29              | Unsupervised Learning and Dimensionality Reduction |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|  11 | 11/6               | Principle Component Analysis (PCA)                 |            |                    |
+|  11 | 11/5               | Principle Component Analysis (PCA)                 |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|  12 | 11/13              | K-means and Hierarchical Clustering                |            |                    |
+|  12 | 11/12              | K-means and Hierarchical Clustering                |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|  13 | 11/20              | Anomaly Detection and Recommender Systems          |            |                    |
+|  13 | 11/19              | Anomaly Detection and Recommender Systems          |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|  14 | 11/27              | Large Scale Machine Learning                       |            |                    |
+|  14 | 11/26              | Large Scale Machine Learning                       |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
-|  15 | 12/4               | Advice for Applying Machine Learning               |            |                    |
+|  15 | 12/3               | Advice for Applying Machine Learning               |            |                    |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
 |     | \color{red}{12/11} | \textcolor{red}{Finals Week}  12/12 - 12/16        |            | \color{red}{Final} |
 |-----+--------------------+----------------------------------------------------+------------+--------------------|
