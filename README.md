@@ -6,7 +6,7 @@ Learning and Data Analysis.  These materials were developed in the
 Fall of 2013 semester.  The original iPython notebooks were created in
 2012 by Hannes Schulz, Andreas Mueller and Nenard Birešev at the
 University of Bonn
-[original github repo](https://github.com/amueller/tutorial_ml_gkbionics).  
+[original github repo](https://github.com/amueller/tutorial_ml_gkbionics).
 I have taken the original material and expanded it for our course.
 
 The materials have been updated for the Fall of 2015 semester.  Materials
@@ -42,10 +42,10 @@ Companion Textbooks on Machine Learning:
 
 - Conway & White. (2012).
   [Machine Learning for Hackers](http://www.amazon.com/Machine-Learning-Hackers-Drew-Conway/dp/1449303714/ref=sr_1_1?ie=UTF8&qid=1376624747&sr=8-1&keywords=machine+learning+for+hackers). [github repo of book source and data](https://github.com/johnmyleswhite/ML_for_Hackers)
-  Case studies for this book are written in R.  This site 
+  Case studies for this book are written in R.  This site
   [Will it Python](http://slendermeans.org/pages/will-it-python.html)
   has example reimplementations in iPython notebooks.
-  
+
 
 
 ## Getting Started
@@ -79,8 +79,11 @@ Canopy distribution should be fine as well.
 - [Enthought Canopy Distribution Download](https://store.enthought.com/downloads/)
 
 Whether you are using Windows, Mac or Linux, the linked to installers
-should work for you.  We are still using Python version 2.7 for this class,
-so please download and install the 2.7 version of the installer.
+should work for you.  We are using Python version 3.x for this class,
+so please download and install the 3.x version of the installer.  Python
+2.x actually will probably work fine, but all of the libraries and code
+we are using have been successfully moved over to Python 3, so you should
+use version 3 of Python if at all possible.
 
 ### Download and Install Git Client
 
@@ -127,4 +130,3 @@ More tips on installing scikit-learn can be found on the [scikit-learn website](
 - [Videos and presentations](http://scikit-learn.sourceforge.net/dev/presentations.html) on machine learning and scikit-learn.
 - The [matplotlib example gallery](http://matplotlib.org/gallery.html).
 - [Numpy for matlab users](http://www.scipy.org/NumPy_for_Matlab_Users).
-
