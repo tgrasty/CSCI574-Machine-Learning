@@ -1,4 +1,4 @@
-1# ml-python-class
+# ml-python-class
 
 Material developed for [Texas A&M University -
 Commerce](http://tamuc.edu) course CSci 574: Introduction to Machine
@@ -15,10 +15,10 @@ from Dr. Ng Coursera [machine learning](https://www.coursera.org/learn/machine-l
 ## Content
 
 - The main content of the course will be delievers as interactive
-  ipython/Jupyter notebooks.
-- The lecture notebooks can be found in
-  the lectures subdirectory, and all assignments for the course will
-  be uploaded to the assignments subdirectory.
+  ipython/Jupyter notebooks.  These iPython/Jupyter notebooks (which use extension .ipynb)
+  can be found in the lectures subdirectory of the repository.
+- All assignments for the course will appear in the assignments folder and/or will
+  be posted through our universities online learning system (MyLeoOnline).
 
 
 
@@ -32,8 +32,10 @@ Suggested material for learning python:
 
 Companion Textbooks on Machine Learning:
 
+- Aurelian Geron (2017). [Hands-On Machine Learning with SciKit-Learn and TensorFlow: Concepts, tools, and techniques to build intelligent systems](https://www.amazon.com/dp/1491962291?aaxitk=GJCjkzlTbRkN0mdMTxzqSg&pd_rd_i=1491962291&pf_rd_p=9420597b-7dad-4cbd-a28d-7d676ac67378&hsa_cr_id=8420444930901&sb-ci-n=productDescription&sb-ci-v=Hands-On%20Machine%20Learning%20with%20Scikit-Learn%20and%20TensorFlow%3A%20Concepts%2C%20Tools%2C%20and%20Techniques%20to%20Build%20Intelligent%20Systems&sb-ci-a=1491962291). O'Reilly Media.
+
 - Segaran. (2007). [Programming Collective Intelligence](http://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325/ref=sr_1_1?ie=UTF8&qid=1376624477&sr=8-1&keywords=segaran+programming+collective+intelligence).
-  Already 6 years old, so a bit out of date, and as far as I know no new
+  Already 12 years old, so a bit out of date, and as far as I know no new
   editions.  But I will develop some of my optimization and decision
   tree examples from here.   [Code examples](https://github.com/uolter/PCI)
 
@@ -53,9 +55,8 @@ Companion Textbooks on Machine Learning:
 Before the end of the first week of class, you need to get a working
 Python distribution installed on your personal machine, and you need
 to clone a copy of our class repository.  The following video should
-help you in getting started
-
-http://derekharter.com/class/fall2017/getting-started.webm
+help you in getting started:
+[Getting Started](http://derekharter.com/class/videos/jupyter-git-setup-250.webm)
 
 In order to do the class lectures and readings, you need to be able to
 run and execute Jupyter notebooks.  In general, you need to complete
@@ -118,15 +119,3 @@ This will start up a notebook server, and on most systems will open
 up a file browser inside of your default web browser, in order for
 you to browse and select iPython notebooks for execution.
 
-
-## Installing Scikit-learn
-
-More tips on installing scikit-learn can be found on the [scikit-learn website](http://scikit-learn.sourceforge.net/dev/install.html#installing-an-official-release).  If you used the Enthought Python distribution, I believe they will be installed for you as part of that distribution.
-
-
-## More Resources
-
-- The [scikit-learn example gallery](http://scikit-learn.sourceforge.net/dev/auto_examples/index.html) and [user guide](http://scikit-learn.sourceforge.net/dev/user_guide.html).
-- [Videos and presentations](http://scikit-learn.sourceforge.net/dev/presentations.html) on machine learning and scikit-learn.
-- The [matplotlib example gallery](http://matplotlib.org/gallery.html).
-- [Numpy for matlab users](http://www.scipy.org/NumPy_for_Matlab_Users).
