@@ -74,11 +74,10 @@ In order to do the class lectures and readings, you need to be able to
 run and execute [Jupyter notebooks](https://www.dataquest.io/blog/jupyter-notebook-tutorial/).
 In general, you need to complete the following 4 steps.
 
-1. Download and install a Python Distribution, such as Anaconda or
-   Enthought python distributions, that includes support for Jupyter
-   notebooks.
-2. Download and install a git client on your machine.
-3. Clone the class repository.
+1. Download and install Anaconda Python Distribution that includes support for running Jupyter notebooks and using the Scientific Python Library compute stack.
+2. Download and install a git client on your machine (if one is not
+   already available).
+3. Clone the class repository using `git clone`
 4. Test out Python, running Jupyter notebooks, and that you can access
    and execute the course lecture notebooks with your system setup.
 
