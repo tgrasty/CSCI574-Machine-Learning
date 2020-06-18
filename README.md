@@ -67,8 +67,8 @@ Python distribution installed on your personal machine, and you need
 to clone a copy of our class repository.  The following video should
 help you in getting started:
 
-- [Getting Started (Windows)](http://derekharter.com/class/videos/jupyter-git-setup-250.webm)
-- [Getting Started (MacOS / Linux)](http://derekharter.com/class/videos/jupyter-git-setup-250.webm)
+- [Getting Started (Windows)](http://derekharter.com/class/videos/w00-class-python-setup-windows.webm)
+- [Getting Started (MacOS / Linux)](http://derekharter.com/class/videos/w00-class-python-setup-macos.webm)
 
 In order to do the class lectures and readings, you need to be able to
 run and execute [Jupyter notebooks](https://www.dataquest.io/blog/jupyter-notebook-tutorial/).
