@@ -1,6 +1,0 @@
-#+TITLE:     Machine Learning and Data Analysis with Python
-#+AUTHOR:    Derek Harter
-#+EMAIL:     derek@harter.pro
-#+DATE:      CSci 574 <2017-08-25 Fri>
-* TODO Figure out problems with rendering summation symbols and matrices
-  in jupyter notebooks.

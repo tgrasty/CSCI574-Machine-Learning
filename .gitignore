@@ -1,6 +1,7 @@
 *.pyc
 .ipynb_checkpoints/*
 */.ipynb_checkpoints/*
+*.vagrant/*
 
 *.acn
 *.swp
