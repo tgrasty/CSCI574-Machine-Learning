@@ -149,11 +149,11 @@ line tools to your PATH.  You can either add `C:\Program Files\Oracle\VirtualBox
 line:
 ```
 # Windows
-> "C:\Program Files\VirtualBox\bin\VBoxMnage.exe" --version
+> "C:\Program Files\VirtualBox\bin\VBoxManage.exe" --version
 6.1.10r138449
 ```
 The location of the PATH where the executable resides and the version
-number may differ slightly.  Although as of the writing of this README,
+number may differ slightly.  As of the writing of this README,
 you should have at least VirtualBox version 6.1.10 or higher installed on
 your system.
 
@@ -181,7 +181,7 @@ find that the command has been added to your PATH for you.
 
 To test, use the `where` or `which` command, and try running `vagrant` asking
 for the installed version.  If the command cannot be found, you need to
-stop and check your install or insure your PATH is set correctly.
+stop and check your install and insure your PATH is set correctly.
 
 ```
 # MacOS / Linux use which to see if vagrant tool in PATH
@@ -249,16 +249,28 @@ The box will download and start a new virtual machine, install the Anaconda Pyth
 and needed Scientific Python libraries.  It will create a JupyterHub server
 and start the server running.  
 
-The following step will take some time to run (less than an hour to a couple of hours
-depending on your download speed).  Leave the terminal up.  If at the end you
-see some error messages, copy/paste the error messages and get help from your
-instructor if needed.
-
 To start the vagrant box and have it provision itself run the following command
 from a terminal in your `ml-python-class` repository directory:
 ```
 $ vagrant up
 ```
+
+This step will take some time.  On my rural Texas DSL I tend to get 100 to
+500 k/sec download when I run this.  The base `virtualbox.box` image will
+first be downloaded.  This usually takes about 30-60 minutes or so from my
+home to complete.  If the base image successfully downloads, the installer
+will then attempt to install Anaconda Python and set up a JupyterHub server.
+This will again take probably 30-60 minutes depending on your speed.
+
+If no errors occurs, the last thing you will see when the install finishes is a message from our Bootstrap provisioning script:
+```
+...
+Anaconda Python3 installed successfully, JupyterHub/JupyterLab server running!
+```
+
+If you instead see error messages in your terminal at the end, please copy them
+and e-mail them to your instructor for advice on proceeding.
+
 
 
 ## Using your JupyterHub Class Development Server
