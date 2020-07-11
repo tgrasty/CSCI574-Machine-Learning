@@ -353,7 +353,7 @@ additional reading sources.
 
 Suggested material for learning python:
 
-- [Think Python: How to think like a computer scientist](http://www.greenteapress.com/think-python-2e/) 2nd Edition.  Free online textbook, very good resource for not only Python but learning to program in general.
+- [Think Python: How to think like a computer scientist](https://greenteapress.com/wp/think-python-2e/) 2nd Edition.  Free online textbook, very good resource for not only Python but learning to program in general.
 - [Google Developers Python Class](https://developers.google.com/edu/python/?hl=ru&csw=1) short course with videos, might be helpful for those looking for video tutorials of Python.
 - [Software Carpentry](http://swcarpentry.github.io/python-novice-inflammation/) section on learning Python is also very good, and also includes videos.
 
