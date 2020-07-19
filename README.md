@@ -174,6 +174,33 @@ Both VirtualBox and Vagrant may require a system reboot (especially on Windows),
 so once you have Vagrant successfully installed, it is a good idea to reboot
 your system at this point before continuing.
 
+**Reboot System**
+
+When you reboot your system to make sure that the VirtualBox and the
+Vagrant installs completely take effect, it would be a good idea to also
+check your BIOS settings and make sure that you have hardware virtualization
+enabled.  VirtualBox and Vagrant will not work if hardware virtualizaiton
+is not enabled.  This is probably enabled now adays by default?  but best
+to explicitly check it.
+
+When booting up, enter your system BIOS
+
+- [How to Enter the BIOS on Any PC: Access Keys by Manufacturer](https://www.tomshardware.com/reviews/bios-keys-to-access-your-firmware,5732.html)
+
+Usually the `F2` key should work, but if not there should usually be
+a message on your first boot screen telling you what the BIOS access
+key is.
+
+In your BIOS, find the setting for hardware Virtualization
+
+- [Enabling Virtualization in your PC BIOS](https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html)
+
+This setting is usually in your BIOS menu under the Processor or CPU settings.
+And as the link says, it will probably be called either `VT-x` or  `AMD-V`.
+Make sure it is enabled.
+
+**After Reboot**
+
 Again once installed it is a good idea to confirm that the command line
 tools are available before moving on.  Since `vagrant` is mainly intended
 to be used from the command line, this time if you are a Windows user you should
@@ -198,6 +225,12 @@ Vagrant 2.2.9
 ```
 As of the writing and testing of this README, you should have installed Vagrant
 version 2.2.9 or higher on your system now.
+
+**NOTE Windows Users** Also you might want to check and disable Hyper-V.  Again
+I think this is usually disabled by default (unless you have installed
+something like Docker).  You can check and disable using the following.
+
+- [Virtualization applications do not work together with Hyper-V](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g)
 
 
 #### 4. Clone the Class Git Repository
