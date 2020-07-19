@@ -320,9 +320,9 @@ from a web browser to access your system.
 
 The system is configured with a standard username/password:
 
-| username:     | vagrant |
-|---------------|---------|
-| **password:** | **vagrant** |
+**username:** vagrant
+
+**password:** vagrant
 
 Also the system remotely mounts your repository directory to the guest
 JupyterHub machine.  So your `ml-python-class` directory that you cloned
@@ -335,6 +335,7 @@ The JupyterHub server uses the
 [Anaconda](https://www.anaconda.com/)
 Python3 distribution.  The default kernel that was created has the following
 Python libraries installed (as well as many others):
+
 - NumPy
 - SciPy
 - Matplotlib
@@ -352,6 +353,7 @@ README).
 
 There are many good video introduction to using Jupyter notebooks and the
 JupyterLab/JupyterHub server environment:
+
 - [Jupyter Tutorial](https://www.tutorialspoint.com/jupyter/index.htm)
 - [Getting Started with JupyterLab](https://dzone.com/articles/getting-started-with-jupyterlab)
 - [SciPy 2019 Tutorial](https://www.youtube.com/watch?v=RFabWieskak)
