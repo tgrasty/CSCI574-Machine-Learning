@@ -141,7 +141,7 @@ location that will be on your usual system path:
 $ which VBoxManage
 /usr/bin/VBoxManage
 $ VBoxManage --version
-6.1.10r138449
+6.1.12r138449
 ```
 
 On Windows OS the installer does not add the location of the VirtualBox command
@@ -150,7 +150,7 @@ line:
 ```
 # Windows
 > "C:\Program Files\VirtualBox\bin\VBoxManage.exe" --version
-6.1.10r138449
+6.1.12r138449
 ```
 The location of the PATH where the executable resides and the version
 number may differ slightly.  As of the writing of this README,
@@ -163,7 +163,7 @@ your system.
 Vagrant greatly simplifies managing and spinning up virtual box instances.
 You have been given a Vagrantfile in the class repository that should
 spin up and provision a full Python Stack vagrant box running a JupyterHub
-server.  
+server.
 
 Again standard install packages are provided on the
 [Vagrant Download](https://www.vagrantup.com/downloads)
