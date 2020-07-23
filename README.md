@@ -149,12 +149,12 @@ line tools to your PATH.  You can either add `C:\Program Files\Oracle\VirtualBox
 line:
 ```
 # Windows
-> "C:\Program Files\VirtualBox\bin\VBoxManage.exe" --version
+> "C:\Program Files\Oracle\VirtualBox\bin\VBoxManage.exe" --version
 6.1.12r138449
 ```
 The location of the PATH where the executable resides and the version
 number may differ slightly.  As of the writing of this README,
-you should have at least VirtualBox version 6.1.10 or higher installed on
+you should have at least VirtualBox version 6.1.12 or higher installed on
 your system.
 
 
