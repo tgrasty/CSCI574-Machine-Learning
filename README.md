@@ -397,6 +397,10 @@ Additional useful links:
 
 - [Full Stack Python](https://www.fullstackpython.com/introduction.html)
 
+## Class Video lectures
+
+- [CSci 574 Official Class YouTube Video Lecture Playlist](https://www.youtube.com/playlist?list=PLKELFBqOW0CfJyA2H1EiF_rqs0RiBcEpi)
+- [Andrew Ng Machine Learning Coursera Course Videos](https://www.youtube.com/playlist?list=PLZ9qNFMHZ-A4rycgrgOYma6zxF4BZGGPW)
 
 #### Class Project Structure
 
