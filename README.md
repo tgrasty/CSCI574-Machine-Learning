@@ -352,6 +352,7 @@ out of date, or other things.  Usually warnings are not issues you need to
 worry about, but if you have a question send me the warning message.
 
 What you want to ensure here includes:
+
 - Make sure that port 8000 on the guest is shown as forwarding to port 8000
   on the host.  The guest is the virtualbox machine you are running, and the
   host is your computer/os.  JupyterLab is served on port 8000 on the guest, and
