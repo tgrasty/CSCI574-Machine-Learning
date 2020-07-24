@@ -341,7 +341,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 [default] GuestAdditions 6.1.10 running --- OK.
 ==> default: Checking for guest additions in VM...
 ==> default: Mounting shared folders...
-    default: /vagrant => /home/dash/repos/ml-python-class-testprovision
+    default: /vagrant => /home/dash/repos/ml-python-class
 ==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
 ==> default: flag to force provisioning. Provisioners marked to run always will still run.
 
@@ -365,7 +365,7 @@ What you want to ensure here includes:
 - Finally your repository should be mounted from your host machine to
   your guest.  This is the line that says
   ```
-  default: /vagrant => /home/dash/repos/ml-python-class-testprovision
+  default: /vagrant => /home/dash/repos/ml-python-class
   ```
   The location of the directory on your host will differ, but it should be
   the location of the repository you cloned in step 4 above.  This
