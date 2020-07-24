@@ -304,6 +304,74 @@ Anaconda Python3 installed successfully, JupyterHub/JupyterLab server running!
 If you instead see error messages in your terminal at the end, please copy them
 and e-mail them to your instructor for advice on proceeding.
 
+At this point, assuming no errors, your vagrant box instance is actually
+up and running.  However it is a good idea to shutdown the server and
+bring it back up at this point to test that things are working cleanly
+and as expected.  Start by doing a halt to shutdown the box:
+
+```
+$ vagrant halt
+==> default: Unmounting NFS shared folders from guest...
+==> default: Forcing shutdown of VM...
+```
+
+You should see that the box is shutdown and not get any error messages.
+Then bring the box back up again.  Once the base image is downloaded,
+and the box is provisioned and set up, bringing it up again should be
+relatively quick.  It will boot in a minute or less usually.
+
+```
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/focal64' version '20200702.0.0' is up to date...
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 8000 (guest) => 8000 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+==> default: Machine booted and ready!
+[default] GuestAdditions 6.1.10 running --- OK.
+==> default: Checking for guest additions in VM...
+==> default: Mounting shared folders...
+    default: /vagrant => /home/dash/repos/ml-python-class-testprovision
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+
+```
+
+Things to check here.  You might get some warnings, like your base box is
+out of date, or other things.  Usually warnings are not issues you need to
+worry about, but if you have a question send me the warning message.
+
+What you want to ensure here includes:
+- Make sure that port 8000 on the guest is shown as forwarding to port 8000
+  on the host.  The guest is the virtualbox machine you are running, and the
+  host is your computer/os.  JupyterLab is served on port 8000 on the guest, and
+  this is how we access it on your host by forwarding that port between the
+  two.
+- You should see that port 22 on the guest is forwarded to some port on your
+  host.  This provides ssh access into your guest machine if needed.
+- Hopefully you will see that the GuestAdditions are running ok.  These
+  can sometimes have problems.  
+- Finally your repository should be mounted from your host machine to
+  your guest.  This is the line that says
+  ```
+  default: /vagrant => /home/dash/repos/ml-python-class-testprovision
+  ```
+  The location of the directory on your host will differ, but it should be
+  the location of the repository you cloned in step 4 above.  This
+  sharing and mounting of your repository directory allows you to access
+  and open the files from the JupyterLab IDE inside of the vagrant box.
+
+If you see that the machines is booted and ready! now, you can then
+proceed to try and log into your JupyterLab server.
 
 
 ## Using your JupyterHub Class Development Server
