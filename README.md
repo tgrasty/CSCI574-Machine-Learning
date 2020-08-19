@@ -174,6 +174,14 @@ Both VirtualBox and Vagrant may require a system reboot (especially on Windows),
 so once you have Vagrant successfully installed, it is a good idea to reboot
 your system at this point before continuing.
 
+**NOTE Windows Users** Before rebooting, you should check and disable Hyper-V
+if it is enabled on your system.  If you don't see the Hyper-V feature, you
+may instead have Virtualization Based Security (VBS).  If so, you may (or may not)
+see issues when you try and install/bootstrap your virtual box. If you have VBS
+and run into inssues, contact the instructor.
+
+- [Virtualization applications do not work together with Hyper-V](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g)
+
 **Reboot System**
 
 When you reboot your system to make sure that the VirtualBox and the
@@ -225,12 +233,6 @@ Vagrant 2.2.9
 ```
 As of the writing and testing of this README, you should have installed Vagrant
 version 2.2.9 or higher on your system now.
-
-**NOTE Windows Users** Also you might want to check and disable Hyper-V.  Again
-I think this is usually disabled by default (unless you have installed
-something like Docker).  You can check and disable using the following.
-
-- [Virtualization applications do not work together with Hyper-V](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g)
 
 
 #### 4. Clone the Class Git Repository
