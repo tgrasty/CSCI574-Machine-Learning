@@ -10,7 +10,7 @@
 
 # create conda environment for JupyterHub with JupyterLab installation/run environment
 #/opt/anaconda3/bin/conda create --name jupyterhub jupyterhub jupyterlab ipywidgets nodejs
-/opt/anaconda3/bin/conda create --yes --name jupyterhub -c conda-forge jupyterhub jupyterlab ipywidgets ipympl nodejs=10
+/opt/anaconda3/bin/conda create --yes --name jupyterhub jupyterhub jupyterlab ipywidgets ipympl nodejs=10
 
 # create JupyterHub config file
 mkdir -p /opt/anaconda3/envs/jupyterhub/etc/jupyterhub
@@ -43,7 +43,7 @@ ln -s /opt/anaconda3/envs/jupyterhub/etc/systemd/jupyterhub.service /etc/systemd
 
 # add extra (system-wide) kernels for JupyterLab
 # Anaconda3 (full scientific python stack)
-/opt/anaconda3/bin/conda create --yes --name python3-datasci -c conda-forge anaconda numpy scipy matplotlib pandas seaborn keras tensorflow statsmodels tensorflow-gpu pytorch torchvision cudatoolkit=10.1 ipykernel ipympl nodejs=10
+/opt/anaconda3/bin/conda create --yes --name python3-datasci anaconda numpy scipy matplotlib pandas seaborn keras tensorflow statsmodels tensorflow-gpu pytorch torchvision cudatoolkit=10.1 ipykernel ipympl nodejs=10
 /opt/anaconda3/envs/python3-datasci/bin/python -m ipykernel install --name 'python3-datasci' --display-name "python3-datasci"
 
 # tensorflow 2.1 w/gpu support and full scientific python stack
@@ -63,7 +63,7 @@ systemctl start jupyterhub.service
 systemctl enable jupyterhub.service
 
 # set up lab extensions
-/opt/anaconda3/bin/conda activate jupyterhub
+conda activate jupyterhub
 /opt/anaconda3/envs/jupyterhub/bin/jupyter labextension install --no-build @jupyterlab/toc
 /opt/anaconda3/envs/jupyterhub/bin/jupyter labextension install --no-build @aquirdturtle/collapsible_headings
 /opt/anaconda3/envs/python3-datasci/bin/jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
@@ -71,7 +71,7 @@ systemctl enable jupyterhub.service
 /opt/anaconda3/envs/jupyterhub/bin/jupyter lab clean
 /opt/anaconda3/envs/jupyterhub/bin/jupyter lab build
 
-/opt/anaconda3/bin/conda activate python3-datasci
+conda activate python3-datasci
 /opt/anaconda3/envs/python3-datasci/bin/jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
 /opt/anaconda3/envs/python3-datasci/bin/jupyter labextension install --no-build jupyter-matplotlib
 /opt/anaconda3/envs/python3-datasci/bin/jupyter lab clean
