@@ -62,4 +62,20 @@ chmod 770 -R /opt/anaconda3
 systemctl start jupyterhub.service
 systemctl enable jupyterhub.service
 
+# set up lab extensions
+/opt/anaconda3/bin/conda activate jupyterhub
+/opt/anaconda3/envs/jupyterhub/bin/jupyter labextension install --no-build @jupyterlab/toc
+/opt/anaconda3/envs/jupyterhub/bin/jupyter labextension install --no-build @aquirdturtle/collapsible_headings
+/opt/anaconda3/envs/python3-datasci/bin/jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
+/opt/anaconda3/envs/python3-datasci/bin/jupyter labextension install --no-build jupyter-matplotlib
+/opt/anaconda3/envs/jupyterhub/bin/jupyter lab clean
+/opt/anaconda3/envs/jupyterhub/bin/jupyter lab build
+
+/opt/anaconda3/bin/conda activate python3-datasci
+/opt/anaconda3/envs/python3-datasci/bin/jupyter labextension install --no-build @jupyter-widgets/jupyterlab-manager
+/opt/anaconda3/envs/python3-datasci/bin/jupyter labextension install --no-build jupyter-matplotlib
+/opt/anaconda3/envs/python3-datasci/bin/jupyter lab clean
+/opt/anaconda3/envs/python3-datasci/bin/jupyter lab build
+
+
 echo "Anaconda Python3 installed successfully, JupyterHub/JupyterLab server running!"
