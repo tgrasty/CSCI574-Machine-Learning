@@ -10,7 +10,7 @@
 
 # create conda environment for JupyterHub with JupyterLab installation/run environment
 #/opt/anaconda3/bin/conda create --name jupyterhub jupyterhub jupyterlab ipywidgets nodejs
-/opt/anaconda3/bin/conda create --yes --name jupyterhub jupyterhub jupyterlab ipywidgets ipympl nodejs=10
+/opt/anaconda3/bin/conda create --yes --name jupyterhub -c conda-forge jupyterhub jupyterlab ipywidgets ipympl nodejs=10
 
 # create JupyterHub config file
 mkdir -p /opt/anaconda3/envs/jupyterhub/etc/jupyterhub
