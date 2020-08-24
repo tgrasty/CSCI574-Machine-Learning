@@ -149,7 +149,7 @@ line tools to your PATH.  You can either add `C:\Program Files\Oracle\VirtualBox
 line:
 ```
 # Windows
-> "C:\Program Files\Oracle\VirtualBox\bin\VBoxManage.exe" --version
+> "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" --version
 6.1.12r138449
 ```
 The location of the PATH where the executable resides and the version
